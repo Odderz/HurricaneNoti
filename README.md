@@ -26,3 +26,18 @@ A multi-agent AI system that tracks hurricanes in real-time and helps US residen
 3. Safety agent assesses danger level for their location
 4. Resource map is generated with nearby emergency locations
 5. Email alert sent to user with safety instructions
+
+## Agents
+- **StormTrackerAgent** — monitors live NOAA National Hurricane Center data
+- **LocationAgent** — resolves zip codes to coordinates
+- **SafetyAgent** — assesses danger level and generates emergency resource map
+- **ParallelObserverAgent** — designed to run StormTracker and Location simultaneously
+
+## Self-Healing
+When live data APIs fail, HurricaneNoti automatically falls back to verified Tampa Bay emergency resource data — ensuring users always receive critical safety information even during network outages.
+
+## Demo
+1. Clone the repo
+2. Add your API keys to `.env`
+3. Run `adk web`
+4. Open `http://localhost:8000`
