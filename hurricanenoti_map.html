@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9a6030bda0e3e4f4bcbf3cad0b6505dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9a6030bda0e3e4f4bcbf3cad0b6505dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9a6030bda0e3e4f4bcbf3cad0b6505dd = L.map(
+                "map_9a6030bda0e3e4f4bcbf3cad0b6505dd",
+                {
+                    center: [28.0627803, -82.4131785],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_393c015a3768f28cd15038171976ef66 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_393c015a3768f28cd15038171976ef66.addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var marker_243df162a0a27ecb17123b58e8139079 = L.marker(
+                [28.0627803, -82.4131785],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_b57ffa13dd9a9e1389aea9adef76281c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b3cfb96ca6c7dec5403d0d7ae73e5e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bebcd19f73db51d61aa5bd6b1de0a644 = $(`<div id="html_bebcd19f73db51d61aa5bd6b1de0a644" style="width: 100.0%; height: 100.0%;">📍 Your Location</div>`)[0];
+                popup_9b3cfb96ca6c7dec5403d0d7ae73e5e0.setContent(html_bebcd19f73db51d61aa5bd6b1de0a644);
+            
+        
+
+        marker_243df162a0a27ecb17123b58e8139079.bindPopup(popup_9b3cfb96ca6c7dec5403d0d7ae73e5e0)
+        ;
+
+        
+    
+    
+            marker_243df162a0a27ecb17123b58e8139079.bindTooltip(
+                `<div>
+                     You are here
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_243df162a0a27ecb17123b58e8139079.setIcon(icon_b57ffa13dd9a9e1389aea9adef76281c);
+            
+    
+            var marker_bec742ece5351d47e77f4f8146ee85d2 = L.marker(
+                [27.9389, -82.4614],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_bbef957d6e811d8a58c679d7c3259275 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e08c4c9fff7497329fb403a8d0aead26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_854df90742898cc03fde192759b8ea61 = $(`<div id="html_854df90742898cc03fde192759b8ea61" style="width: 100.0%; height: 100.0%;">🏥 Hospital: Tampa General Hospital<br>Phone: (813) 844-7000</div>`)[0];
+                popup_e08c4c9fff7497329fb403a8d0aead26.setContent(html_854df90742898cc03fde192759b8ea61);
+            
+        
+
+        marker_bec742ece5351d47e77f4f8146ee85d2.bindPopup(popup_e08c4c9fff7497329fb403a8d0aead26)
+        ;
+
+        
+    
+    
+            marker_bec742ece5351d47e77f4f8146ee85d2.bindTooltip(
+                `<div>
+                     Tampa General Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bec742ece5351d47e77f4f8146ee85d2.setIcon(icon_bbef957d6e811d8a58c679d7c3259275);
+            
+    
+            var marker_0625f5c7c5641133e870f6ed2ccbbfb6 = L.marker(
+                [27.9728, -82.475],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_b2a0126c3d41334766e7271a87c14653 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93d8d95237449e1d8711ee84ef1a6cc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cbb00c722d6ff02e198fe9177228afe = $(`<div id="html_4cbb00c722d6ff02e198fe9177228afe" style="width: 100.0%; height: 100.0%;">🏥 Hospital: St. Joseph's Hospital<br>Phone: (813) 870-4000</div>`)[0];
+                popup_93d8d95237449e1d8711ee84ef1a6cc3.setContent(html_4cbb00c722d6ff02e198fe9177228afe);
+            
+        
+
+        marker_0625f5c7c5641133e870f6ed2ccbbfb6.bindPopup(popup_93d8d95237449e1d8711ee84ef1a6cc3)
+        ;
+
+        
+    
+    
+            marker_0625f5c7c5641133e870f6ed2ccbbfb6.bindTooltip(
+                `<div>
+                     St. Joseph's Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0625f5c7c5641133e870f6ed2ccbbfb6.setIcon(icon_b2a0126c3d41334766e7271a87c14653);
+            
+    
+            var marker_43504935f6f031f94cd42dadf5c1d5c9 = L.marker(
+                [28.0161, -82.4694],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_5d60cedaa0950cf96b4c820b17d10e92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e52d0a43fab7e80aebdf98a25ece7f21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cb9034b1edb68415823b551f0ee8698 = $(`<div id="html_1cb9034b1edb68415823b551f0ee8698" style="width: 100.0%; height: 100.0%;">🏥 Hospital: AdventHealth Tampa<br>Phone: (813) 971-6000</div>`)[0];
+                popup_e52d0a43fab7e80aebdf98a25ece7f21.setContent(html_1cb9034b1edb68415823b551f0ee8698);
+            
+        
+
+        marker_43504935f6f031f94cd42dadf5c1d5c9.bindPopup(popup_e52d0a43fab7e80aebdf98a25ece7f21)
+        ;
+
+        
+    
+    
+            marker_43504935f6f031f94cd42dadf5c1d5c9.bindTooltip(
+                `<div>
+                     AdventHealth Tampa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43504935f6f031f94cd42dadf5c1d5c9.setIcon(icon_5d60cedaa0950cf96b4c820b17d10e92);
+            
+    
+            var marker_d6b8b714ecb4a87647257d9cc4f51536 = L.marker(
+                [27.9497, -82.4596],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_d81bdca7eed72edd87b07713837d383b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e61314d4a9f164e6457ac419c65b92e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0c2bf54cf9019bd7bfdc5f1a82383e3 = $(`<div id="html_a0c2bf54cf9019bd7bfdc5f1a82383e3" style="width: 100.0%; height: 100.0%;">🏥 Hospital: USF Health Morsani<br>Phone: (813) 259-0900</div>`)[0];
+                popup_7e61314d4a9f164e6457ac419c65b92e.setContent(html_a0c2bf54cf9019bd7bfdc5f1a82383e3);
+            
+        
+
+        marker_d6b8b714ecb4a87647257d9cc4f51536.bindPopup(popup_7e61314d4a9f164e6457ac419c65b92e)
+        ;
+
+        
+    
+    
+            marker_d6b8b714ecb4a87647257d9cc4f51536.bindTooltip(
+                `<div>
+                     USF Health Morsani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6b8b714ecb4a87647257d9cc4f51536.setIcon(icon_d81bdca7eed72edd87b07713837d383b);
+            
+    
+            var marker_e15eb092ceca02b31d5beb7ec24014a3 = L.marker(
+                [28.0161, -82.4694],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_10573e37e42a1d62fc46b39fe232ffd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0a07f8e2812cdc8c6d5fa6025319129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64dd2da0051bc888d71385317b4a6102 = $(`<div id="html_64dd2da0051bc888d71385317b4a6102" style="width: 100.0%; height: 100.0%;">🏥 Hospital: Florida Hospital Tampa<br>Phone: (813) 971-6000</div>`)[0];
+                popup_c0a07f8e2812cdc8c6d5fa6025319129.setContent(html_64dd2da0051bc888d71385317b4a6102);
+            
+        
+
+        marker_e15eb092ceca02b31d5beb7ec24014a3.bindPopup(popup_c0a07f8e2812cdc8c6d5fa6025319129)
+        ;
+
+        
+    
+    
+            marker_e15eb092ceca02b31d5beb7ec24014a3.bindTooltip(
+                `<div>
+                     Florida Hospital Tampa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e15eb092ceca02b31d5beb7ec24014a3.setIcon(icon_10573e37e42a1d62fc46b39fe232ffd5);
+            
+    
+            var marker_662c633ee71502277727a22137767139 = L.marker(
+                [28.0631, -82.415],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_d549b0b44f7b5e9fe6014c0014461014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_778895dbe50d428b67290cdc5b963a4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6287c2ccaf5ef8fd57105a598a7c1c0e = $(`<div id="html_6287c2ccaf5ef8fd57105a598a7c1c0e" style="width: 100.0%; height: 100.0%;">🏥 Hospital: Moffitt Cancer Center<br>Phone: (813) 745-4673</div>`)[0];
+                popup_778895dbe50d428b67290cdc5b963a4a.setContent(html_6287c2ccaf5ef8fd57105a598a7c1c0e);
+            
+        
+
+        marker_662c633ee71502277727a22137767139.bindPopup(popup_778895dbe50d428b67290cdc5b963a4a)
+        ;
+
+        
+    
+    
+            marker_662c633ee71502277727a22137767139.bindTooltip(
+                `<div>
+                     Moffitt Cancer Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_662c633ee71502277727a22137767139.setIcon(icon_d549b0b44f7b5e9fe6014c0014461014);
+            
+    
+            var marker_722f87217d9ca09a72aeb5ffe5a4139f = L.marker(
+                [28.0619, -82.4289],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_e9d96bd2020e47fceeb6911ddd6d0a5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fed386023d0f19177830ff1fab113aac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0849b3d11f4f2ce0ae0e4cc93b6f7925 = $(`<div id="html_0849b3d11f4f2ce0ae0e4cc93b6f7925" style="width: 100.0%; height: 100.0%;">🏥 Hospital: VA Hospital Tampa<br>Phone: (813) 972-2000</div>`)[0];
+                popup_fed386023d0f19177830ff1fab113aac.setContent(html_0849b3d11f4f2ce0ae0e4cc93b6f7925);
+            
+        
+
+        marker_722f87217d9ca09a72aeb5ffe5a4139f.bindPopup(popup_fed386023d0f19177830ff1fab113aac)
+        ;
+
+        
+    
+    
+            marker_722f87217d9ca09a72aeb5ffe5a4139f.bindTooltip(
+                `<div>
+                     VA Hospital Tampa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_722f87217d9ca09a72aeb5ffe5a4139f.setIcon(icon_e9d96bd2020e47fceeb6911ddd6d0a5a);
+            
+    
+            var marker_3b80b2e5656e83b342afed900dbb1440 = L.marker(
+                [27.988, -82.309],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_121e6196a28ab43ca6b26bb8cd2dd65d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b7c407f68f5de1bd1e38850407bd155 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32d4b3a897e449265f7d647930c63a2e = $(`<div id="html_32d4b3a897e449265f7d647930c63a2e" style="width: 100.0%; height: 100.0%;">⛺ Shelter: Hillsborough County Pet-Friendly Shelter<br>Phone: (813) 272-6900</div>`)[0];
+                popup_6b7c407f68f5de1bd1e38850407bd155.setContent(html_32d4b3a897e449265f7d647930c63a2e);
+            
+        
+
+        marker_3b80b2e5656e83b342afed900dbb1440.bindPopup(popup_6b7c407f68f5de1bd1e38850407bd155)
+        ;
+
+        
+    
+    
+            marker_3b80b2e5656e83b342afed900dbb1440.bindTooltip(
+                `<div>
+                     Hillsborough County Pet-Friendly Shelter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b80b2e5656e83b342afed900dbb1440.setIcon(icon_121e6196a28ab43ca6b26bb8cd2dd65d);
+            
+    
+            var marker_57702e3698e192499ca46f741ad7188b = L.marker(
+                [27.8508, -82.3536],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_586085aa15d4a9c46089de5bcdb99987 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdd118a956dc4716c97323cc80b880ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b656faef4f6fa034a0aac0dd907a2eb = $(`<div id="html_4b656faef4f6fa034a0aac0dd907a2eb" style="width: 100.0%; height: 100.0%;">⛺ Shelter: MidFlorida Credit Union Amphitheatre Shelter<br>Phone: (813) 272-5900</div>`)[0];
+                popup_bdd118a956dc4716c97323cc80b880ab.setContent(html_4b656faef4f6fa034a0aac0dd907a2eb);
+            
+        
+
+        marker_57702e3698e192499ca46f741ad7188b.bindPopup(popup_bdd118a956dc4716c97323cc80b880ab)
+        ;
+
+        
+    
+    
+            marker_57702e3698e192499ca46f741ad7188b.bindTooltip(
+                `<div>
+                     MidFlorida Credit Union Amphitheatre Shelter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57702e3698e192499ca46f741ad7188b.setIcon(icon_586085aa15d4a9c46089de5bcdb99987);
+            
+    
+            var marker_d34934aaa0be54d1ce6aaf6bc7a43a67 = L.marker(
+                [28.045, -82.505],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_a2b5fb736466853955f39f4236514a1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a4e9a61354153295596dd3777b5bf3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef775a8717302e777f21bd6922c871f7 = $(`<div id="html_ef775a8717302e777f21bd6922c871f7" style="width: 100.0%; height: 100.0%;">⛺ Shelter: Yukon Recreation Center Shelter<br>Phone: (813) 272-5900</div>`)[0];
+                popup_3a4e9a61354153295596dd3777b5bf3c.setContent(html_ef775a8717302e777f21bd6922c871f7);
+            
+        
+
+        marker_d34934aaa0be54d1ce6aaf6bc7a43a67.bindPopup(popup_3a4e9a61354153295596dd3777b5bf3c)
+        ;
+
+        
+    
+    
+            marker_d34934aaa0be54d1ce6aaf6bc7a43a67.bindTooltip(
+                `<div>
+                     Yukon Recreation Center Shelter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d34934aaa0be54d1ce6aaf6bc7a43a67.setIcon(icon_a2b5fb736466853955f39f4236514a1a);
+            
+    
+            var marker_0ffd3087ab9fd934ea876d4c666d81b9 = L.marker(
+                [28.0597, -82.4138],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_46360b3d25c65178c3f113c8a6e791e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88749d2fd9741e58a239b5f63d5547ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2433ce1a05f2deeed51b768e996220c9 = $(`<div id="html_2433ce1a05f2deeed51b768e996220c9" style="width: 100.0%; height: 100.0%;">⛺ Shelter: USF Sun Dome Shelter<br>Phone: (813) 272-5900</div>`)[0];
+                popup_88749d2fd9741e58a239b5f63d5547ae.setContent(html_2433ce1a05f2deeed51b768e996220c9);
+            
+        
+
+        marker_0ffd3087ab9fd934ea876d4c666d81b9.bindPopup(popup_88749d2fd9741e58a239b5f63d5547ae)
+        ;
+
+        
+    
+    
+            marker_0ffd3087ab9fd934ea876d4c666d81b9.bindTooltip(
+                `<div>
+                     USF Sun Dome Shelter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ffd3087ab9fd934ea876d4c666d81b9.setIcon(icon_46360b3d25c65178c3f113c8a6e791e3);
+            
+    
+            var marker_3c483a92691e035081ff78bd6ba9492a = L.marker(
+                [28.0782, -82.3869],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_edeb2350ce8b902a14ead18599802a0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25411b812b2b6b9639569742728329fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3fdb10906830a5f074fb2eac52b14ad = $(`<div id="html_e3fdb10906830a5f074fb2eac52b14ad" style="width: 100.0%; height: 100.0%;">⛺ Shelter: Greco Middle School Shelter<br>Phone: (813) 272-5900</div>`)[0];
+                popup_25411b812b2b6b9639569742728329fb.setContent(html_e3fdb10906830a5f074fb2eac52b14ad);
+            
+        
+
+        marker_3c483a92691e035081ff78bd6ba9492a.bindPopup(popup_25411b812b2b6b9639569742728329fb)
+        ;
+
+        
+    
+    
+            marker_3c483a92691e035081ff78bd6ba9492a.bindTooltip(
+                `<div>
+                     Greco Middle School Shelter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c483a92691e035081ff78bd6ba9492a.setIcon(icon_edeb2350ce8b902a14ead18599802a0b);
+            
+    
+            var marker_7639d7179a3d1c14406c1174710134d2 = L.marker(
+                [27.9477, -82.4584],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_d773065521599eb36fb72977b70d350a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b6cfda10810ce1b238f53a4964824bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c83447deb57063a6091e144e5e2fcb44 = $(`<div id="html_c83447deb57063a6091e144e5e2fcb44" style="width: 100.0%; height: 100.0%;">🚒 Fire Station: Tampa Fire Station 1<br>Phone: (813) 276-3800</div>`)[0];
+                popup_0b6cfda10810ce1b238f53a4964824bb.setContent(html_c83447deb57063a6091e144e5e2fcb44);
+            
+        
+
+        marker_7639d7179a3d1c14406c1174710134d2.bindPopup(popup_0b6cfda10810ce1b238f53a4964824bb)
+        ;
+
+        
+    
+    
+            marker_7639d7179a3d1c14406c1174710134d2.bindTooltip(
+                `<div>
+                     Tampa Fire Station 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7639d7179a3d1c14406c1174710134d2.setIcon(icon_d773065521599eb36fb72977b70d350a);
+            
+    
+            var marker_5cd62742bf85b80d912ebf52d9f67314 = L.marker(
+                [27.9728, -82.475],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_80233333dda9b658eaf0d85d398044ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1086dd16af9dd68ce0354969ea0be6c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa6dba880be5d4a1b912ca79c933cdd8 = $(`<div id="html_aa6dba880be5d4a1b912ca79c933cdd8" style="width: 100.0%; height: 100.0%;">🚒 Fire Station: Tampa Fire Station 7<br>Phone: (813) 276-3800</div>`)[0];
+                popup_1086dd16af9dd68ce0354969ea0be6c0.setContent(html_aa6dba880be5d4a1b912ca79c933cdd8);
+            
+        
+
+        marker_5cd62742bf85b80d912ebf52d9f67314.bindPopup(popup_1086dd16af9dd68ce0354969ea0be6c0)
+        ;
+
+        
+    
+    
+            marker_5cd62742bf85b80d912ebf52d9f67314.bindTooltip(
+                `<div>
+                     Tampa Fire Station 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cd62742bf85b80d912ebf52d9f67314.setIcon(icon_80233333dda9b658eaf0d85d398044ea);
+            
+    
+            var marker_229ad4bd98a6b3a6691c5914d8e0b107 = L.marker(
+                [28.0645, -82.4089],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_adbe8dd026c54b65fae6a7c85247d83b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5416ee555980ade5315bda948503892c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbd48c29bd939ce201ee1b80d9dc94fe = $(`<div id="html_cbd48c29bd939ce201ee1b80d9dc94fe" style="width: 100.0%; height: 100.0%;">🚒 Fire Station: Tampa Fire Station 23 - USF Area<br>Phone: (813) 276-3800</div>`)[0];
+                popup_5416ee555980ade5315bda948503892c.setContent(html_cbd48c29bd939ce201ee1b80d9dc94fe);
+            
+        
+
+        marker_229ad4bd98a6b3a6691c5914d8e0b107.bindPopup(popup_5416ee555980ade5315bda948503892c)
+        ;
+
+        
+    
+    
+            marker_229ad4bd98a6b3a6691c5914d8e0b107.bindTooltip(
+                `<div>
+                     Tampa Fire Station 23 - USF Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_229ad4bd98a6b3a6691c5914d8e0b107.setIcon(icon_adbe8dd026c54b65fae6a7c85247d83b);
+            
+    
+            var marker_f27d60b552a3e793af42d940b5c23944 = L.marker(
+                [27.9477, -82.4584],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_52d72805b81869ca764ad6202c74ad70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f55c147e132e7b00d546a0575b0bc116 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81c13e62fe119460c487405ca1e29e9b = $(`<div id="html_81c13e62fe119460c487405ca1e29e9b" style="width: 100.0%; height: 100.0%;">🚔 Police Station: Tampa Police Department HQ<br>Phone: (813) 276-3200</div>`)[0];
+                popup_f55c147e132e7b00d546a0575b0bc116.setContent(html_81c13e62fe119460c487405ca1e29e9b);
+            
+        
+
+        marker_f27d60b552a3e793af42d940b5c23944.bindPopup(popup_f55c147e132e7b00d546a0575b0bc116)
+        ;
+
+        
+    
+    
+            marker_f27d60b552a3e793af42d940b5c23944.bindTooltip(
+                `<div>
+                     Tampa Police Department HQ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f27d60b552a3e793af42d940b5c23944.setIcon(icon_52d72805b81869ca764ad6202c74ad70);
+            
+    
+            var marker_e9c728862580a89c07a6e9c642c5b48d = L.marker(
+                [27.988, -82.475],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_3dfdcb4c0519ca0db35f0f7066c4d04e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac95bb472cfc6767b360573589028aa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd02267a32435eef4a515f41f69f1c32 = $(`<div id="html_bd02267a32435eef4a515f41f69f1c32" style="width: 100.0%; height: 100.0%;">🚔 Police Station: Hillsborough County Sheriff<br>Phone: (813) 247-8200</div>`)[0];
+                popup_ac95bb472cfc6767b360573589028aa9.setContent(html_bd02267a32435eef4a515f41f69f1c32);
+            
+        
+
+        marker_e9c728862580a89c07a6e9c642c5b48d.bindPopup(popup_ac95bb472cfc6767b360573589028aa9)
+        ;
+
+        
+    
+    
+            marker_e9c728862580a89c07a6e9c642c5b48d.bindTooltip(
+                `<div>
+                     Hillsborough County Sheriff
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9c728862580a89c07a6e9c642c5b48d.setIcon(icon_3dfdcb4c0519ca0db35f0f7066c4d04e);
+            
+    
+            var marker_944c1bd5f393ee79f77e36ddb81fa23b = L.marker(
+                [28.0512, -82.3989],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_960ff8164b4c59b08950e71a905d8325 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61b1a33e0640a8ed247aa98f42950aab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d08e0bc2836414fc0f514442972ef86c = $(`<div id="html_d08e0bc2836414fc0f514442972ef86c" style="width: 100.0%; height: 100.0%;">🚔 Police Station: TPD District III - Northeast<br>Phone: (813) 276-3200</div>`)[0];
+                popup_61b1a33e0640a8ed247aa98f42950aab.setContent(html_d08e0bc2836414fc0f514442972ef86c);
+            
+        
+
+        marker_944c1bd5f393ee79f77e36ddb81fa23b.bindPopup(popup_61b1a33e0640a8ed247aa98f42950aab)
+        ;
+
+        
+    
+    
+            marker_944c1bd5f393ee79f77e36ddb81fa23b.bindTooltip(
+                `<div>
+                     TPD District III - Northeast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_944c1bd5f393ee79f77e36ddb81fa23b.setIcon(icon_960ff8164b4c59b08950e71a905d8325);
+            
+    
+            var marker_d3e48fa2ca895c4fb24f17ff313dd090 = L.marker(
+                [27.9728, -82.505],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_406ef31c5f00866ddf4cebc6e42da7e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2702b2a5cdb151e387dd87a0f85b7e9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bfb71a931c7452f7e8a4d41436be625 = $(`<div id="html_3bfb71a931c7452f7e8a4d41436be625" style="width: 100.0%; height: 100.0%;">💊 Pharmacy: CVS Pharmacy - Dale Mabry<br>Phone: (813) 877-4392</div>`)[0];
+                popup_2702b2a5cdb151e387dd87a0f85b7e9a.setContent(html_3bfb71a931c7452f7e8a4d41436be625);
+            
+        
+
+        marker_d3e48fa2ca895c4fb24f17ff313dd090.bindPopup(popup_2702b2a5cdb151e387dd87a0f85b7e9a)
+        ;
+
+        
+    
+    
+            marker_d3e48fa2ca895c4fb24f17ff313dd090.bindTooltip(
+                `<div>
+                     CVS Pharmacy - Dale Mabry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3e48fa2ca895c4fb24f17ff313dd090.setIcon(icon_406ef31c5f00866ddf4cebc6e42da7e5);
+            
+    
+            var marker_b015581af52a7cd4eb61b4b39ed3313e = L.marker(
+                [27.9477, -82.475],
+                {
+}
+            ).addTo(map_9a6030bda0e3e4f4bcbf3cad0b6505dd);
+        
+    
+            var icon_70785ecbe8fba0ae5d819ca7c974bed4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0f38382cd87c004d73e49e9c79a011d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dd99cef6be5cebf4757e08078a00c5f = $(`<div id="html_2dd99cef6be5cebf4757e08078a00c5f" style="width: 100.0%; height: 100.0%;">💊 Pharmacy: Walgreens - Kennedy Blvd<br>Phone: (813) 254-1674</div>`)[0];
+                popup_d0f38382cd87c004d73e49e9c79a011d.setContent(html_2dd99cef6be5cebf4757e08078a00c5f);
+            
+        
+
+        marker_b015581af52a7cd4eb61b4b39ed3313e.bindPopup(popup_d0f38382cd87c004d73e49e9c79a011d)
+        ;
+
+        
+    
+    
+            marker_b015581af52a7cd4eb61b4b39ed3313e.bindTooltip(
+                `<div>
+                     Walgreens - Kennedy Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b015581af52a7cd4eb61b4b39ed3313e.setIcon(icon_70785ecbe8fba0ae5d819ca7c974bed4);
+            
+</script>
+</html>
