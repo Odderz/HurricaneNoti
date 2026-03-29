@@ -4,7 +4,7 @@ from . import tools
 
 root_agent = Agent(
     name="HurricaneNoti",
-    model=LiteLlm(model="groq/llama-3.3-70b-versatile"),
+    model="gemini-2.5-flash-lite",
     description="A multi-agent hurricane safety system for US residents.",
     instruction="""You are HurricaneNoti, a hurricane safety assistant for anyone in the United States.
     When a user first messages you, greet them and ask:
